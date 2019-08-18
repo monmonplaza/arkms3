@@ -1,0 +1,26 @@
+footer {
+  background-color: $secondary-color;
+  color: $light-color;
+  li {
+    padding: 0 2rem;
+    border-right: 1px solid $light-color;
+    &:last-child {
+      border: none;
+    }
+    a {
+      color: $light-color;
+    }
+  }
+}
+
+.copyright {
+  background-color: darken($secondary-color, 10);
+  color: $light-color;
+  padding: 1rem 0;
+  li {
+    margin-right: 2rem;
+    a {
+      font-size: 3rem;
+    }
+  }
+}

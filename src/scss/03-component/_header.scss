@@ -1,0 +1,18 @@
+header {
+  max-height: 6rem;
+  line-height: 7.3rem;
+
+  .branding {
+    color: $secondary-color;
+  }
+
+  nav {
+    ul {
+      display: flex;
+    }
+
+    li {
+      margin-left: 1.2rem;
+    }
+  }
+}
