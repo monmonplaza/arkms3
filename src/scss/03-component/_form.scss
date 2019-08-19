@@ -1,12 +1,59 @@
 input {
-    padding: .8rem 1.3rem;
-    border-radius: .5rem;
-    border: none;
-    outline: none;
+  padding: 0.8rem 1.3rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
 }
 
 .btn {
-    padding: .8rem 1.6rem;
-    border-radius: .5rem;
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.log {
+  .form-group {
+    position: relative;
+    input {
+      width: 65rem;
+      height: 8rem;
+      border: 1px solid $gray-color;
+      display: block;
+      margin-bottom: 3rem;
+      padding: 2rem 1rem 1rem 1rem;
+      border-radius: 5px;
+    }
+
+    .label-name {
+      position: absolute;
+      top: 3rem;
+      left: 1rem;
+      font-size: 1.6rem;
+      pointer-events: none;
+      transform: translateY(0%);
+      transition: 0.5s ease;
+      color: #b6b6b6;
+    }
+    input:focus + .label-name,
+    input:valid + .label-name {
+      transform: translateY(-120%);
+      font-size: 1.4rem;
+      opacity: 0.7;
+    }
+  }
+  button {
+    background-color: $primary-color;
     border: none;
+    width: 100%;
+    padding: 3rem;
+    color: $light-color;
+    font-size: 2rem;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+    cursor: pointer;
+    transition: 0.5s ease;
+    &:hover {
+      background-color: darken($primary-color, 5);
+    }
+  }
 }
