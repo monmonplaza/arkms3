@@ -19,8 +19,10 @@
             <div class="center-all">
               <div class="wrapper">
                 <h1>ARKMS</h1>
-                <h3>Welcome!</h3>
-                <p>Sign in by entering the information below</p>
+                <h3>Create your Account</h3>
+                <p>
+                  Fill up all the fields. Password must be at least 8 characters
+                </p>
                 <form action="">
                   <div class="form-group">
                     <input
@@ -45,17 +47,23 @@
                       >Password</label
                     >
                   </div>
-                  <ul class="text-right ">
-                    <li>
-                      <img src="./images/forget-icon.png" alt="" />
-                    </li>
-                    <li><a href="reset-password.html"> Forgot Password?</a></li>
-                  </ul>
-                  <button>Sign In</button>
+
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      name="login-password"
+                      class="login-password"
+                      required
+                    />
+                    <label for="login-password" class="label-name"
+                      >Confirm Password</label
+                    >
+                  </div>
+
+                  <button>Sign Up</button>
                 </form>
-                <p class="create-account">
-                  Don't have an account?
-                  <a href="create-account.html">Create one here</a>
+                <p class="login-mgs text-secondary text-center ">
+                  Success! Please check your email for the verification link
                 </p>
               </div>
             </div>
