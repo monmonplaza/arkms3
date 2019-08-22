@@ -1,11 +1,21 @@
 footer {
   background-color: $secondary-color;
   color: $light-color;
+  .footer-wrapper ul {
+    @include media-query($sm-screen) {
+      display: block;
+    }
+  }
   li {
     padding: 0 2rem;
     border-right: 1px solid $light-color;
     &:last-child {
       border: none;
+    }
+    @include media-query($sm-screen) {
+      border: none;
+
+      padding: 1rem 10rem;
     }
     a {
       color: $light-color;

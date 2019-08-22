@@ -47,4 +47,11 @@ h4 {
 
 .x-large {
   font-size: 7rem;
+  @include media-query($md-screen) {
+    line-height: 1.2;
+  }
+
+  @include media-query($sm-screen) {
+    font-size: 5rem;
+  }
 }

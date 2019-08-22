@@ -165,3 +165,10 @@ $spaceamount: (1, 2, 3, 4, 5);
   justify-content: center;
   align-items: center;
 }
+
+.show-on-sm {
+  display: block;
+  @include media-query($sm-screen) {
+    display: none;
+  }
+}

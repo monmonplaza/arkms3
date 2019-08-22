@@ -4,7 +4,7 @@
     url($banner-img);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   color: $light-color;
   display: flex;
@@ -17,24 +17,53 @@
   position: relative;
   z-index: 3;
   width: 50vw;
-
+  @include media-query($sm-screen) {
+    margin-top: 2rem;
+    width: 50vh;
+  }
   h2 {
     font-weight: 300;
+    @include media-query($sm-screen) {
+      font-size: 1.8rem;
+      line-height: 1.2;
+      margin: 2rem 0;
+    }
   }
 
-  form {
+  .search-wrapper {
     margin-top: 2rem;
-
+    @include media-query($sm-screen) {
+      display: block;
+    }
     input {
       font-size: 3rem;
       margin-right: 1rem;
       text-indent: 10px;
+      @include media-query($sm-screen) {
+        width: 90%;
+        margin: 1rem auto;
+      }
       &::placeholder {
         font-size: 2.5rem;
         opacity: 0.23;
         font-weight: 300;
       }
     }
+    button {
+      background-color: $secondary-color;
+      color: $light-color;
+    }
+  }
+}
+
+.most-download {
+  span {
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-size: 6rem;
+    line-height: 1;
+    margin-bottom: 3rem;
   }
 }
 
@@ -141,9 +170,17 @@
 }
 
 .browse-research-header {
+  @include media-query($md-screen) {
+    text-align: center;
+  }
   .browse-nav {
     padding: 0.3rem;
     border-bottom: 2px solid $gray-color;
+    @include media-query($sm-screen) {
+      width: 100%;
+      overflow-x: scroll;
+      border-bottom: none;
+    }
     li {
       margin-right: 1rem;
       padding: 1rem;

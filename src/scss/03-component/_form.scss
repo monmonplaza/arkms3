@@ -12,6 +12,11 @@ input {
 }
 
 .log {
+  .wrapper {
+    @include media-query($sm-screen) {
+      width: 100%;
+    }
+  }
   .form-group {
     position: relative;
     input {
@@ -23,6 +28,13 @@ input {
       padding: 2rem 1rem 1rem 1rem;
       border-radius: 5px;
       text-indent: 2rem;
+      @include media-query($xl-screen) {
+        margin: 1.5rem auto;
+        width: 95%;
+      }
+      @include media-query($sm-screen) {
+        width: 100%;
+      }
     }
 
     .label-name {
@@ -53,6 +65,9 @@ input {
     margin-bottom: 3rem;
     cursor: pointer;
     transition: 0.5s ease;
+    @include media-query($xl-screen) {
+      width: 95%;
+    }
     &:hover {
       background-color: darken($secondary-color, 5);
     }
